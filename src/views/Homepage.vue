@@ -18,14 +18,14 @@
       <Board :data="connectData">
         <connectBoard />
       </Board>
-      <Board :data="researchData">
-        <researchCard v-for="(item, index) in researches" :key="index" :data="item" class="mb-4"/>
-      </Board>
       <Board :data="projectData">
         <projectCard v-for="(item, index) in projects" :key="index" :data="item" class="mb-4"/>
       </Board>
       <Board :data="intershipData">
         <intershipCard v-for="(item, index) in internships" :key="index" :data="item" class="mb-4"/>
+      </Board>
+      <Board :data="researchData">
+        <researchCard v-for="(item, index) in researches" :key="index" :data="item" class="mb-4"/>
       </Board>
       <!-- <Board :data="othersData">
       </Board> -->
@@ -55,6 +55,8 @@ import projectCard from '@/components/projectCard.vue';
 import { Briefcase, GraduationCap, Languages, LandPlot, Wrench, Brain, PawPrint } from 'lucide-vue-next';
 import { useI18n } from 'vue-i18n'
 const { t } = useI18n()
+
+import { computed } from 'vue';
 
 // 标题数据
 const educationData = {
@@ -87,7 +89,8 @@ const othersData = {
     icon: PawPrint
 };
 
-const researches = [
+// researches
+const researches = computed(() => [
   {
     professor: t("research.SRT.professor"),
     position: t("research.SRT.position"),
@@ -100,10 +103,10 @@ const researches = [
     time: t("research.LYY.time"),
     description: t("research.LYY.description")
   }
-];
+])
 
 // projects
-const projects = [
+const projects = computed(() => [
   {
     time: t("projects.QAQ.time"),
     title: t("projects.QAQ.title"),
@@ -119,10 +122,10 @@ const projects = [
     title: t("projects.RAG.title"),
     description: t("projects.RAG.description")
   }
-];
+])
 
-// internship
-const internships = [
+// internships
+const internships = computed(() => [
   {
     time: "2025.07 - 2025.08",
     company: t("internships.hw.company"),
@@ -135,8 +138,7 @@ const internships = [
     title: t("internships.yp.title"),
     description: t("internships.yp.description")
   }
-];
-
+])
 
 </script>
 
