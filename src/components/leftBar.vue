@@ -1,9 +1,21 @@
 <template>
   <div
-    class="leftbar h-full bg-gray-50 dark:bg-gray-900 flex flex-col justify-center items-center shadow-sm w-full"
+    class="leftbar h-full bg-gray-50 dark:bg-gray-900 flex flex-col items-center shadow-sm w-full py-8"
   >
+    <!-- 头像与姓名 -->
+    <div class="profile flex flex-col items-center mb-8">
+      <img
+        src="/assets/avatar.jpg"
+        alt="Profile photo"
+        class="w-24 h-24 rounded-full object-cover border-2 border-blue-400 mb-3 shadow-sm"
+      />
+      <h1 class="text-base font-semibold text-gray-800 dark:text-gray-100">
+        Li Yifei
+      </h1>
+    </div>
+
     <!-- 邮箱 -->
-    <div class="email mb-6">
+    <div class="email mb-6 flex items-center justify-center">
       <Mail class="inline-block w-4 h-4 mr-2 text-gray-600 dark:text-gray-300" />
       <a
         href="mailto:liyifei22@mails.tsinghua.edu.cn"
@@ -57,5 +69,12 @@ const skills = [
 <style scoped>
 .leftbar {
   font-family: "Inter", "Noto Sans", sans-serif;
+}
+
+.profile img {
+  transition: transform 0.3s ease;
+}
+.profile img:hover {
+  transform: scale(1.05);
 }
 </style>

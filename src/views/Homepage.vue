@@ -59,35 +59,34 @@ const { t } = useI18n()
 import { computed } from 'vue';
 
 // 标题数据
-const educationData = {
-    title: t("education.title"),
-    icon: GraduationCap
-};
-const languageData = {
-    title: t("language.title"),
-    icon: Languages
-};
-const connectData = {
-    title: t("connect.title"),
-    icon: LandPlot
-};
-
-const researchData = {
-    title: t("research.title"),
-    icon: Brain
-};
-const projectData = {
-    title: t("projects.title"),
-    icon: Wrench
-}; 
-const intershipData = {
-    title: t("internships.title"),
-    icon: Briefcase
-};
-const othersData = {
-    title: t("others.title"),
-    icon: PawPrint
-};
+const educationData = computed(() => ({
+  title: t("education.title"),
+  icon: GraduationCap
+}));
+const languageData = computed(() => ({
+  title: t("language.title"),
+  icon: Languages
+}));
+const connectData = computed(() => ({
+  title: t("connect.title"),
+  icon: LandPlot
+}));
+const researchData = computed(() => ({
+  title: t("research.title"),
+  icon: Brain
+}));
+const projectData = computed(() => ({
+  title: t("projects.title"),
+  icon: Wrench
+}));
+const intershipData = computed(() => ({
+  title: t("internships.title"),
+  icon: Briefcase
+}));
+const othersData = computed(() => ({
+  title: t("others.title"),
+  icon: PawPrint
+}));
 
 // researches
 const researches = computed(() => [

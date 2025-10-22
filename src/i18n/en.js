@@ -2,44 +2,45 @@ export default {
     duration: 'Duration',
     period: 'Period',
     leftbar: {
-        skills: 'Skills',
+        skills: 'Main Skills',
     },
     education: {
         title: 'Education',
         period: 'Period',
         school: 'Institution',
-        degree: 'Degree',
+        degree: 'Major',
         major: 'Computer Science and Technology',
         uni: 'Tsinghua University',
         hi: 'Affiliated High School of Peking University',
 
+        coursesTitle: 'Main Courses',
         math: 'Mathematics & Fundamentals',
         programming: 'Programming & AI',
         systems: 'Systems & Networks',
-
+        
         courses: {
-        calculus: 'Calculus',
-        linearAlgebra: 'Linear Algebra',
-        advLinearAlgebra: 'Advanced Linear Algebra',
-        physics: 'University Physics',
-        discreteMath: 'Discrete Mathematics',
-        probability: 'Probability and Statistics',
-        complex: 'Complex Analysis',
+            calculus: 'Calculus',
+            linearAlgebra: 'Linear Algebra',
+            advLinearAlgebra: 'Advanced Linear Algebra',
+            physics: 'University Physics',
+            discreteMath: 'Discrete Mathematics',
+            probability: 'Probability and Statistics',
+            complex: 'Complex Analysis',
 
-        progFund: 'Introduction to Programming',
-        oop: 'Object-Oriented Programming',
-        dataStruct: 'Data Structures',
-        os: 'Operating Systems',
-        ai: 'Introduction to Artificial Intelligence',
-        ann: 'Artificial Neural Networks',
+            progFund: 'Introduction to Programming',
+            oop: 'Object-Oriented Programming',
+            dataStruct: 'Data Structures',
+            os: 'Operating Systems',
+            ai: 'Introduction to Artificial Intelligence',
+            ann: 'Artificial Neural Networks',
 
-        digitalLogic: 'Digital Logic Design',
-        automata: 'Formal Languages and Automata',
-        arch: 'Computer Architecture',
-        compiler: 'Compiler Principles',
-        org: 'Computer Organization',
-        network: 'Computer Networks',
-        websec: 'Introduction to Network Security'
+            digitalLogic: 'Digital Logic Design',
+            automata: 'Formal Languages and Automata',
+            arch: 'Computer Architecture',
+            compiler: 'Compiler Principles',
+            org: 'Computer Organization',
+            network: 'Computer Networks',
+            websec: 'Introduction to Network Security'
         }
     },
     language: {

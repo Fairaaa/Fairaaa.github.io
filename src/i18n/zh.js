@@ -2,18 +2,19 @@ export default {
     duration: '持续时间',
     period: '时间',
     leftbar: {
-        skills: '技能',
+        skills: '主要技能',
     },
     education: {
         title: '教育经历',
         period: '时间',
         school: '学校',
-        degree: '学位',
+        degree: '专业',
         major: '计算机科学与技术',
         uni: '清华大学',
         hi: '北京大学附属中学',
 
         // 三类课程分组标题
+        coursesTitle: '主要课程',
         math: '数学与基础科学类',
         programming: '程序设计与人工智能类',
         systems: '系统与网络类',

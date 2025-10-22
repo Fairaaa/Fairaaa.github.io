@@ -10,3 +10,31 @@
         @apply bg-gray-900 text-white;
     }
 }
+
+/* ===== 默认浅色滚动条样式 ===== */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(100, 100, 100, 0.4);
+  border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(100, 100, 100, 0.6);
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+/* ===== 深色模式滚动条样式 ===== */
+.dark ::-webkit-scrollbar-thumb {
+  background-color: rgba(160, 160, 160, 0.4);
+}
+
+.dark ::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(180, 180, 180, 0.6);
+}

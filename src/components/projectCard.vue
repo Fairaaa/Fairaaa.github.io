@@ -1,11 +1,12 @@
 <template>
   <div
-    class="rounded-2xl shadow-md p-4 hover:shadow-lg transition w-[95%] mx-auto
-           bg-white dark:bg-gray-800
+    class="rounded-2xl p-4 w-[95%] mx-auto transition
+           bg-white dark:bg-gray-900
            text-gray-800 dark:text-gray-100
-           dark:shadow-none"
+           shadow-md dark:shadow-[0_0_10px_rgba(255,255,255,0.05)]
+           hover:shadow-lg dark:hover:shadow-[0_0_12px_rgba(255,255,255,0.08)]"
   >
-    <!-- 顶部：公司 + 时间 -->
+    <!-- 顶部：标题 + 时间 -->
     <div class="flex justify-between items-center mb-2">
       <h3 class="text-lg font-bold text-gray-800 dark:text-gray-100">
         {{ data.title }}
@@ -15,8 +16,13 @@
       </span>
     </div>
 
+    <!-- 分隔线 -->
+    <div class="border-t border-gray-100 dark:border-gray-700 my-3"></div>
+
     <!-- 描述 -->
-    <p class="leading-relaxed text-sm whitespace-pre-line text-gray-700 dark:text-gray-200">
+    <p
+      class="leading-relaxed text-sm whitespace-pre-line text-gray-700 dark:text-gray-300"
+    >
       {{ data.description }}
     </p>
   </div>
